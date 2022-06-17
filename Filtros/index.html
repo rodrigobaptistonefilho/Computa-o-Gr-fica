@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Computação Gráfica</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <input type="file" id="fileLoader" class="hidden">
+    <div class="container mx-auto">
+        <h1 class="text-center font-bold text-2xl"> Processamento Básico de Imagens</h1>
+        <div class="mb-4 mt-4">
+            <button class="bg-red-700 text-white py-1 px-2" 
+            id="btnCarregar">Carregar Imagem</button>
+
+            <button class="bg-red-900 text-white py-1 px-2" 
+            id="btnVermelho">Vermelho</button>
+
+            <button class="bg-green-900 text-white py-1 px-2" 
+            id="btnVerde">Verde</button>
+
+            <button class="bg-blue-900 text-white py-1 px-2" 
+            id="btnAzul">Azul</button>
+
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnEscalaCinzaMedia">Escala de Cinza - Média</button>
+            
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnEscalaCinzaNTSC">Escala de Cinza - NTSC</button>
+            
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnSuavizacaoMedia">Média</button>
+            
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnSuavizacaoMediana">Mediana</button>
+            
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnSuavizacaoGaussian">Gaussian</button>
+
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnLimiarizacaoBinaria">Binária</button>
+
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnBrilho">Brilho</button>
+
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnContraste">Contraste</button>
+
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnGirar90">Girar 90º</button>
+
+            <button class="bg-blue-700 text-white py-1 px-2" 
+            id="btnFlipHorizontal">Flip Horizontal</button>
+
+            <button class="bg-blue-700 text-white py-1 px-2" style="margin-top: 10px;"
+            id="btnFlipVertical">Flip Vertical</button>
+        </div>
+        <div class="flex">
+            <div class="w-1/2 border-2 p-3 mr-3">
+                <h1 class="font-bold text-3xl text-center pb-4"></h1>
+                <img id="image" src="images/clown-fish.jpg" class="m-auto" />
+            </div>
+            <div class="w-1/2 border-2 p-3">
+                <h1 class="font-bold text-3xl text-center pb-4"></h1>
+                <canvas id="image-canvas" class="m-auto"></canvas>                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
